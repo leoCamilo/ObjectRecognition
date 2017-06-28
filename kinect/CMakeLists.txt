@@ -48,7 +48,7 @@ target_link_libraries (mainwindow Qt5::Widgets)
 
 rosbuild_add_library (ros_thread src/main/ros-thread.cpp)
 rosbuild_add_library (gui_thread src/main/gui-thread.cpp)
-rosbuild_add_library (cloud_lib  lib/cloud-tools.cpp)
+rosbuild_add_library (cloud_lib  src/library/cloud-tools.cpp)
 
 target_link_libraries (gui_thread mainwindow)
 target_link_libraries (ros_thread cloud_lib)
