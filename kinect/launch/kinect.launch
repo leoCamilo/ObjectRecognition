@@ -1,0 +1,7 @@
+<launch>
+	<group ns="kinect">
+		<node pkg="kinect" name="downsampler" type="downsample"/>
+		<node pkg="kinect" name="cluster" type="clustering"/>
+		<node pkg="kinect" name="associate" type="association"/>
+	</group>
+</launch>

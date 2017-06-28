@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_screen</class>
+ <widget class="QMainWindow" name="main_screen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Kinect Config</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTabWidget" name="tabs">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>500</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>251</height>
+     </size>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideLeft</enum>
+    </property>
+    <widget class="QWidget" name="viewer_tab">
+     <attribute name="title">
+      <string>viewer</string>
+     </attribute>
+     <widget class="QLineEdit" name="txtCloudPath">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>341</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ex: /home/user/cloud.pcd</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnViewCloud">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>50</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>view</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cbCloudType">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>211</width>
+        <height>29</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>vfh histogram viewer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtVfhPath">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>351</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ex: /home/user/histogram.pcd</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnViewVFH">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>190</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>view</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>cloud viewer</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="pubCloudCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>90</y>
+        <width>111</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:  none;
+outline:  none;</string>
+      </property>
+      <property name="text">
+       <string>publish cloud</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="model_tab">
+     <attribute name="title">
+      <string>model</string>
+     </attribute>
+     <widget class="QPushButton" name="alignCloudsBtn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>460</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>align clouds</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtOutputPath">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>351</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>result file name - ex: /home/leo/model_file.pcd</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get model (generate vfh histogram)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pathTextCloud1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>220</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>~/input-cloud-1.pcd</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pathTextCloud2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>200</y>
+        <width>220</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>~/input-cloud-2.pcd</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pathTextCloudOut">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>460</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>~/aligned-cloud.pcd</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="getCloudInstant">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>90</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>get model</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Alignment (icp)</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cbCloudChannel">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>241</width>
+        <height>29</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cloud channel:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="getCloudsInstant">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>50</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>get all</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="downsample_tab">
+     <attribute name="title">
+      <string>downsample</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioButtonNoFilter">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>108</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>No Filter</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonVoxel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>131</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>VoxelGrid Filter</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>250</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+outline: none;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>250</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+outline: none;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>160</y>
+        <width>250</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+outline: none;</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>97</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>voxel x</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>127</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>voxel y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>157</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>voxel z</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>157</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>97</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>127</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>86</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>teste</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="clustering_tab">
+     <attribute name="title">
+      <string>clustering</string>
+     </attribute>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>141</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Euclidian Distance</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>108</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DBScan</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>40</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>40</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cluster count</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="classifier_tab">
+     <attribute name="title">
+      <string>classify</string>
+     </attribute>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>66</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ros topic</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="topicText">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>160</y>
+        <width>271</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ex: /home/leo/model</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClassify">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>160</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>compute</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>66</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>file path</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modelPathText">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>200</y>
+        <width>271</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ex: /clustering/0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>66</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>file path</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnModeling">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>modeling</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modelText">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>271</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>ex: /home/leo/cloud.pcd</string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="openFolderBtn">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>270</y>
+        <width>151</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>open current folder</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

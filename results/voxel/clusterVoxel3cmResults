@@ -1,0 +1,208 @@
+
+ C L U S T E R I N G   S T A R T E D
+ ===================================
+
+ started at: Tue Jun 20 01:05:17 2017
+
+
+ euclidian clustering approach
+ - distance tolerance: 0.1
+ - minimal cluster size: 50
+ - maximum cluster size: 1000
+ - maximum clouds count: 10
+
+ input channel: /filtered/points
+
+ output channels:
+ - clustering/0
+ - clustering/1
+ - clustering/2
+ - clustering/3
+ - clustering/4
+ - clustering/5
+ - clustering/6
+ - clustering/7
+ - clustering/8
+ - clustering/9
+time: 0.113272
+time: 0.112012
+time: 0.110392
+time: 0.114936
+time: 0.112981
+time: 0.110213
+time: 0.114048
+time: 0.11368
+time: 0.117342
+time: 0.121198
+time: 0.113686
+time: 0.117527
+time: 0.114946
+time: 0.116699
+time: 0.114244
+time: 0.11195
+time: 0.115527
+time: 0.119714
+time: 0.131956
+time: 0.12155
+time: 0.106696
+time: 0.112526
+time: 0.111144
+time: 0.108723
+time: 0.110252
+time: 0.108055
+time: 0.107296
+time: 0.108275
+time: 0.109711
+time: 0.108811
+time: 0.104819
+time: 0.109615
+time: 0.112813
+time: 0.110667
+time: 0.111872
+time: 0.111154
+time: 0.109233
+time: 0.111231
+time: 0.111979
+time: 0.104649
+time: 0.11282
+time: 0.107763
+time: 0.105798
+time: 0.102532
+time: 0.10527
+time: 0.107358
+time: 0.120464
+time: 0.116345
+time: 0.117496
+time: 0.11457
+time: 0.116678
+time: 0.116464
+time: 0.111613
+time: 0.109037
+time: 0.107657
+time: 0.109464
+time: 0.118348
+time: 0.190111
+time: 0.190685
+time: 0.171288
+time: 0.154596
+time: 0.197694
+time: 0.130599
+time: 0.156271
+time: 0.169317
+time: 0.197442
+time: 0.179117
+time: 0.125613
+time: 0.128093
+time: 0.193362
+time: 0.16446
+time: 0.171577
+time: 0.195079
+time: 0.160095
+time: 0.14634
+time: 0.203649
+time: 0.228889
+time: 0.163334
+time: 0.214338
+time: 0.109221
+time: 0.103196
+time: 0.101694
+time: 0.10874
+time: 0.107077
+time: 0.114659
+time: 0.112141
+time: 0.109985
+time: 0.104538
+time: 0.11174
+time: 0.123384
+time: 0.111621
+time: 0.109351
+time: 0.105081
+time: 0.107374
+time: 0.107491
+time: 0.109577
+time: 0.110671
+time: 0.107575
+time: 0.109668
+time: 0.10983
+time: 0.105685
+time: 0.107098
+time: 0.113175
+time: 0.10913
+time: 0.124869
+time: 0.13586
+time: 0.133745
+time: 0.130097
+time: 0.107982
+time: 0.10931
+time: 0.105686
+time: 0.132788
+time: 0.135316
+time: 0.133957
+time: 0.131316
+time: 0.131612
+time: 0.109467
+time: 0.111328
+time: 0.107401
+time: 0.108956
+time: 0.107256
+time: 0.110016
+time: 0.112199
+time: 0.105046
+time: 0.108501
+time: 0.112831
+time: 0.111718
+time: 0.110646
+time: 0.131304
+time: 0.130209
+time: 0.119601
+time: 0.116375
+time: 0.109593
+time: 0.110586
+time: 0.108107
+time: 0.109094
+time: 0.107788
+time: 0.106362
+time: 0.112924
+time: 0.108969
+time: 0.10528
+time: 0.111087
+time: 0.113941
+time: 0.108246
+time: 0.109589
+time: 0.129094
+time: 0.107916
+time: 0.105785
+time: 0.111013
+time: 0.144864
+time: 0.229443
+time: 0.228812
+time: 0.223634
+time: 0.182214
+time: 0.15563
+time: 0.22034
+time: 0.229723
+time: 0.232351
+time: 0.179696
+time: 0.172516
+time: 0.230508
+time: 0.218569
+time: 0.220268
+time: 0.159479
+time: 0.185029
+time: 0.218311
+time: 0.145965
+time: 0.13303
+time: 0.133048
+time: 0.183024
+time: 0.167775
+time: 0.171383
+time: 0.154618
+time: 0.134906
+time: 0.207054
+time: 0.131814
+time: 0.197798
+time: 0.196481
+time: 0.165689
+time: 0.172579
+time: 0.19081
+time: 0.129899

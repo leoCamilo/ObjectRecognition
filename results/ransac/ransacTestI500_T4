@@ -1,0 +1,104 @@
+
+ P L A N E   R E M O V E   S T A R T E D
+ =======================================
+
+ started at: Wed Jun 21 00:44:10 2017
+
+
+ ransac approach
+ - maximum iterations: 500
+ - distance threshold: 0.04
+
+ input channel: /camera/depth/points
+ output channel: /ransac/points
+time: 0.167973
+time: 0.193016
+time: 0.195527
+time: 0.183821
+time: 0.208167
+time: 0.179232
+time: 0.181597
+time: 0.180608
+time: 0.193877
+time: 0.199932
+time: 0.178721
+time: 0.20846
+time: 0.195575
+time: 0.203099
+time: 0.201126
+time: 0.197213
+time: 0.202348
+time: 0.20032
+time: 0.192517
+time: 0.182208
+time: 0.176292
+time: 0.191934
+time: 0.197809
+time: 0.189211
+time: 0.175828
+time: 0.198398
+time: 0.192176
+time: 0.193053
+time: 0.206011
+time: 0.184096
+time: 0.171187
+time: 0.200246
+time: 0.204313
+time: 0.192318
+time: 0.216113
+time: 0.213235
+time: 0.187265
+time: 0.184434
+time: 0.182642
+time: 0.203408
+time: 0.183419
+time: 0.181852
+time: 0.192976
+time: 0.208665
+time: 0.197245
+time: 0.2104
+time: 0.192627
+time: 0.192905
+time: 0.17006
+time: 0.190495
+time: 0.185142
+time: 0.196608
+time: 0.205665
+time: 0.196476
+time: 0.185165
+time: 0.180828
+time: 0.176624
+time: 0.183119
+time: 0.204797
+time: 0.183888
+time: 0.19713
+time: 0.201596
+time: 0.192243
+time: 0.198127
+time: 0.183703
+time: 0.187776
+time: 0.19975
+time: 0.207133
+time: 0.205891
+time: 0.19662
+time: 0.19852
+time: 0.180122
+time: 0.180817
+time: 0.180418
+time: 0.188827
+time: 0.192624
+time: 0.208141
+time: 0.20505
+time: 0.177612
+time: 0.173823
+time: 0.199708
+time: 0.180735
+time: 0.181076
+time: 0.172223
+time: 0.192997
+time: 0.189331
+time: 0.198513
+time: 0.204392
+time: 0.176706
+time: 0.181224
+time: 0.165468

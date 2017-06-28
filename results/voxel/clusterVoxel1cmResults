@@ -1,0 +1,38 @@
+
+ C L U S T E R I N G   S T A R T E D
+ ===================================
+
+ started at: Tue Jun 20 01:06:37 2017
+
+
+ euclidian clustering approach
+ - distance tolerance: 0.1
+ - minimal cluster size: 50
+ - maximum cluster size: 1000
+ - maximum clouds count: 10
+
+ input channel: /filtered/points
+
+ output channels:
+ - clustering/0
+ - clustering/1
+ - clustering/2
+ - clustering/3
+ - clustering/4
+ - clustering/5
+ - clustering/6
+ - clustering/7
+ - clustering/8
+ - clustering/9
+time: 2.58456
+time: 2.47568
+time: 2.90752
+time: 3.40359
+time: 2.55276
+time: 2.46079
+time: 2.56133
+time: 4.30405
+time: 3.9593
+time: 3.56069
+time: 2.54191
+time: 2.50607

@@ -1,0 +1,127 @@
+
+ P L A N E   R E M O V E   S T A R T E D
+ =======================================
+
+ started at: Wed Jun 21 00:48:09 2017
+
+
+ ransac approach
+ - maximum iterations: 500
+ - distance threshold: 0.06
+
+ input channel: /camera/depth/points
+ output channel: /ransac/points
+time: 0.137516
+time: 0.125279
+time: 0.155134
+time: 0.148986
+time: 0.128083
+time: 0.158124
+time: 0.142407
+time: 0.140122
+time: 0.146729
+time: 0.146016
+time: 0.141272
+time: 0.149026
+time: 0.143021
+time: 0.138666
+time: 0.143829
+time: 0.143658
+time: 0.141873
+time: 0.134904
+time: 0.148319
+time: 0.138958
+time: 0.140339
+time: 0.133727
+time: 0.148272
+time: 0.149756
+time: 0.158278
+time: 0.14212
+time: 0.141578
+time: 0.152266
+time: 0.141123
+time: 0.1316
+time: 0.141917
+time: 0.154733
+time: 0.140271
+time: 0.143622
+time: 0.140052
+time: 0.148862
+time: 0.146104
+time: 0.145347
+time: 0.144551
+time: 0.140535
+time: 0.129441
+time: 0.135601
+time: 0.137354
+time: 0.133918
+time: 0.128586
+time: 0.144684
+time: 0.12904
+time: 0.132515
+time: 0.136189
+time: 0.141046
+time: 0.138878
+time: 0.138561
+time: 0.152651
+time: 0.135889
+time: 0.153279
+time: 0.133556
+time: 0.150915
+time: 0.135802
+time: 0.142717
+time: 0.150816
+time: 0.133425
+time: 0.135888
+time: 0.145061
+time: 0.143438
+time: 0.151892
+time: 0.14409
+time: 0.142464
+time: 0.148695
+time: 0.138128
+time: 0.145316
+time: 0.145231
+time: 0.142732
+time: 0.126892
+time: 0.142613
+time: 0.150957
+time: 0.146432
+time: 0.154763
+time: 0.141858
+time: 0.139137
+time: 0.129111
+time: 0.140517
+time: 0.149461
+time: 0.130653
+time: 0.155057
+time: 0.14806
+time: 0.146771
+time: 0.15481
+time: 0.140116
+time: 0.144344
+time: 0.144094
+time: 0.128753
+time: 0.156622
+time: 0.151455
+time: 0.13896
+time: 0.140515
+time: 0.13875
+time: 0.149481
+time: 0.144864
+time: 0.127218
+time: 0.146181
+time: 0.148299
+time: 0.146683
+time: 0.132659
+time: 0.151812
+time: 0.144105
+time: 0.14836
+time: 0.143989
+time: 0.142732
+time: 0.138469
+time: 0.142005
+time: 0.140493
+time: 0.14576
+time: 0.142824
+time: 0.141061

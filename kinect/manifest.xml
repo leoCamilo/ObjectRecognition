@@ -1,0 +1,18 @@
+<package>
+  <description brief="kinect">
+
+     kinect
+
+  </description>
+  <author>Leonardo</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/kinect</url>
+  <depend package="pcl_conversions"/>
+  <depend package="pcl_msgs"/>
+  <depend package="pcl_ros"/>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="rospy"/>
+
+</package>
