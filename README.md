@@ -52,3 +52,29 @@ command: ``` rosrun kinect clustering ```
   <img src="/screenshots/Screenshot%20from%202017-05-26%2018:05:02.png" width="45%">
   <img src="/screenshots/Screenshot%20from%202017-05-26%2018:11:26.png" width="45%">
 </p>
+
+## association
+
+the [association](/kinect/src/nodes/knn-association.cpp) module use the [K-nearest-neighbors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) approach, each segment found on clustering step is associated through the time.
+
+command: ``` rosrun kinect association ```
+
+<p align="center">
+  <img src="/screenshots/Screenshot%20from%202017-05-30%2016:19:05.png" width="45%">
+  <img src="/screenshots/Screenshot%20from%202017-05-30%2016:19:22.png" width="45%">
+</p>
+
+## vfh-tracker
+
+this module use the descriptor [VFH](http://pointclouds.org/documentation/tutorials/vfh_estimation.php) found on PCL to create a feature histogram for each object associated, and a KNN aproach to classify the histogram, the chi square distance is used to get the distance between the histograms. To this node works is needed a training set, with the model of the object you want to track. As result, a red boundary box is set on scene to show the tracked object.
+
+command: ``` rosrun kinect vfh-tracker '\model\path\folder' ```
+
+<p align="center">
+  <img src="/screenshots/Screenshot%20from%202017-06-21%2022:12:04.png" width="45%">
+  <img src="/screenshots/Screenshot%20from%202017-06-21%2022:12:36.png" width="45%">
+  <img src="/screenshots/Screenshot%20from%202017-06-21%2022:13:29.png" width="45%">
+  <img src="/screenshots/Screenshot%20from%202017-06-21%2022:14:06.png" width="45%">
+  <img src="/screenshots/Screenshot%20from%202017-06-21%2022:14:26.png" width="45%">
+  <img src="/screenshots/Screenshot%20from%202017-06-21%2022:14:42.png" width="45%">
+</p>
