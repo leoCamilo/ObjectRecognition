@@ -78,3 +78,9 @@ command: ``` rosrun kinect vfh-tracker '\model\path\folder' ```
   <img src="/screenshots/Screenshot%20from%202017-06-21%2022:14:26.png" width="45%">
   <img src="/screenshots/Screenshot%20from%202017-06-21%2022:14:42.png" width="45%">
 </p>
+
+## videos
+
+- [video 1](https://youtu.be/uHN-OzuG_P0)
+- [video 2](https://youtu.be/6RJNfO7ljw0)
+- [video 3](https://youtu.be/UaJ_SajaMf0)
