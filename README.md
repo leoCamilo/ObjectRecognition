@@ -2,12 +2,12 @@
 
 An object recognition system implemented using [ROS](http://www.ros.org/) and [PCL](http://pointclouds.org/), using a Kinect sensor with point cloud data.
 
-nodes implemented:
-  - [ransac](/kinect/src/nodes/ransac.cpp) (floor removing)
-  - [downsample](/kinect/src/nodes/voxel-downsample.cpp) (sample reducer using voxelgrid)
-  - [clustering](/kinect/src/nodes/euclidian-clustering.cpp) (object segmentation using euclidian distance)
-  - [association](/kinect/src/nodes/knn-association.cpp) (object temporal association using KNN)
-  - [vfh-tracker](/kinect/src/nodes/vfh-tracking.cpp) (object classification using VFH and KNN)
+The system uses the ROS approach of [nodes](http://wiki.ros.org/Nodes) to implement the functionalities, nodes implemented in the system:
+  - [ransac](#ransac) (floor removing)
+  - [downsample](#downsample) (sample reducer using voxelgrid)
+  - [clustering](#clustering) (object segmentation using euclidian distance)
+  - [association](#association) (object temporal association using KNN)
+  - [vfh-tracker](#vfh-tracker) (object classification using VFH and KNN)
   - [snapshot](/kinect/src/nodes/take-snapshot.cpp) (creator of models)
   - [viewer](/kinect/src/nodes/pcl-viewer.cpp) (object viewer)
   - [box-tracker](/kinect/src/nodes/prediction-tracking.cpp) (boundary box viewer)
