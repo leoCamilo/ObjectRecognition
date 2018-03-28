@@ -84,7 +84,3 @@ command: ``` rosrun kinect vfh-tracker '\model\path\folder' ```
 - [video 1](https://youtu.be/uHN-OzuG_P0)
 - [video 2](https://youtu.be/6RJNfO7ljw0)
 - [video 3](https://youtu.be/UaJ_SajaMf0)
-
-## paper / article
-
-an article (in portuguese) with better explanation can be found [here](/results/article.pdf)!
